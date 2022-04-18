@@ -1,0 +1,275 @@
+{
+    "name": "projects/[PROJECT_ID OR PROJECT_NUMBER]/dashboards/a810f08a-3699-4b57-a0ec-8eafa46ecb7f",
+    "displayName": "Credit Card Fraud Detection",
+    "mosaicLayout": {
+      "columns": 12,
+      "tiles": [
+        {
+          "xPos": 8,
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "AI Platform - Prediction count [MEAN]",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"ml.googleapis.com/prediction/prediction_count\" resource.type=\"cloudml_model_version\" metric.label.\"prediction_type\"=\"online_prediction\" resource.label.\"model_id\"=\"cc_model\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "legendTemplate": "${resource.labels.version_id}",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        },
+        {
+          "yPos": 3,
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "AI Platform - Error count [MEAN]",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"ml.googleapis.com/prediction/error_count\" resource.type=\"cloudml_model_version\" metric.label.\"prediction_type\"=\"online_prediction\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "legendTemplate": "${resource.labels.version_id}",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        },
+        {
+          "xPos": 4,
+          "yPos": 3,
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "AI Platform - Total Latency [95TH PERCENTILE]",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"ml.googleapis.com/prediction/latencies\" resource.type=\"cloudml_model_version\" metric.label.\"latency_type\"=\"total\" resource.label.\"model_id\"=\"cc_model\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_PERCENTILE_95"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        },
+        {
+          "xPos": 8,
+          "yPos": 3,
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "Fraud Notifications - Unacked msgs [MEAN]",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/num_undelivered_messages\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"fraud_notify_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        },
+        {
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "Input Pub/Sub - Ack vs Unacked msg count [MEAN]",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/ack_message_count\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/num_undelivered_messages\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        },
+        {
+          "xPos": 4,
+          "width": 4,
+          "height": 3,
+          "widget": {
+            "title": "Input Pub/Sub - Ack latency",
+            "xyChart": {
+              "dataSets": [
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/ack_latencies\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_PERCENTILE_05"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/ack_latencies\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_PERCENTILE_50"
+                      },
+                      "secondaryAggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/ack_latencies\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_PERCENTILE_95"
+                      },
+                      "secondaryAggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                },
+                {
+                  "timeSeriesQuery": {
+                    "timeSeriesFilter": {
+                      "filter": "metric.type=\"pubsub.googleapis.com/subscription/ack_latencies\" resource.type=\"pubsub_subscription\" metadata.system_labels.\"name\"=\"df_sub\"",
+                      "aggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_PERCENTILE_99"
+                      },
+                      "secondaryAggregation": {
+                        "alignmentPeriod": "60s",
+                        "perSeriesAligner": "ALIGN_MEAN"
+                      }
+                    }
+                  },
+                  "plotType": "LINE",
+                  "minAlignmentPeriod": "60s"
+                }
+              ],
+              "timeshiftDuration": "0s",
+              "yAxis": {
+                "label": "y1Axis",
+                "scale": "LINEAR"
+              },
+              "chartOptions": {
+                "mode": "COLOR"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,167 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "trans_date_trans_time",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cc_num",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "merchant",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "category",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "amt",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "first",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "last",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "gender",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "street",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "city",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "state",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "zip",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "lat",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "long",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "city_pop",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "job",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "dob",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "trans_num",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "unix_time",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "merch_lat",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "merch_long",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "is_fraud",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "day",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "age",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "distance",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "trans_diff",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "avg_spend_pw",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "avg_spend_pm",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "trans_freq_24",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "is_fraud_model_w_aggregates",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "is_fraud_model_wo_aggregates",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "prob_is_fraud_model_w_aggregates",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "prob_is_fraud_model_wo_aggregates",
+    "type": "FLOAT"
+  }
+]
