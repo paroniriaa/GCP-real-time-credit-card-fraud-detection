@@ -10,9 +10,14 @@ This project aim to predict whether a credit card transaction is fradulent or no
 * stores the prediction results to BigQuery and
 * sends notification to another Pub/Sub topic when a transaction is predicted fraudlent for downstream consumptions
 
-Refer the below architecture diagram
+Refer the project document for details 
+
+[Project Document](report/Project_Document.pdf)
+
+Refer the below architecture diagram for workflow
 
 ## Architecture
+<img width="1234" alt="Architecture" src="https://user-images.githubusercontent.com/44891450/168407436-1bae4106-682a-4b9d-948e-1cf53e35f9d6.png">
 
 ## Dataset
 
