@@ -1,5 +1,9 @@
 # GCP-real-time-credit-card-fraud-detection
 
+
+## Contribution
+This project is developed based on the existing solution that provide by GCP
+
 ## Overview
 
 This project aim to predict whether a credit card transaction is fradulent or not in real time. This uses a streaming dataflow pipeline to
@@ -56,7 +60,7 @@ In this example, based on the fed training dataset, we have two types of models
   * avg_spend_pw - Average transaction amount in the past 1 week
   * avg_spend_pm - Average transaction amount in the past 1 month
 
-| Feature       | Derived     | Used in Model1 | Used in Model2,3,4 |
+| Feature       | Derived     | Used in Model1 | Used in Model2,3,4,5,6 |
 | ------------- |-------------| --------------:| --------------:|
 | category      | No          | Yes            | Yes            |
 | amt           | No          | Yes            | Yes            |
