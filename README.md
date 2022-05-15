@@ -12,8 +12,8 @@ This project is referenced and developed based on the existing solution:
 ### Contribution
 * Based on references, constructed the complete workflow for developing and deploying the GCP based severless real-time credit card fraud detection solution using Google Colab
 * Trained, evaluated, and deployed different machine learning models:
- * (Deployed) BigQuery: Boost Tree Models, Deep Neural Network Model
- * (Not yet deploy) TensorFlow TFDF: Random Forest Model, Gradient Boosted Trees Model, Cart Model
+  * (Deployed) BigQuery: Boost Tree Models, Deep Neural Network Model
+  * (Not yet deploy) TensorFlow TFDF: Random Forest Model, Gradient Boosted Trees Model, Cart Model
 
 ### Future Work
 * Deploy esisting TensorFlow TFDF models on GCP AI-Platform
