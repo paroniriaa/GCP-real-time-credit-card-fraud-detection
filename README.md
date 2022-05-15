@@ -1,8 +1,25 @@
 # GCP-real-time-credit-card-fraud-detection
 
 
-## Contribution
-This project is developed based on the existing solution that provide by GCP
+## Work Refernece and Contribution
+### Reference
+This project is referenced and developed based on the existing solution:
+
+* Workflow Reference: [GCP Blog - How to build a serverless real-time credit card fraud detection solution](https://cloud.google.com/blog/products/data-analytics/how-to-build-a-fraud-detection-solution)
+* BigQuery Reference: [GitLab Repo - cc_fraud_detection](https://cloud.google.com/blog/products/data-analytics/how-to-build-a-fraud-detection-solution)
+* Dataset Reference: [GitHub Repo - Generate Fake Credit Card Transaction Data, Including Fraudulent Transactions](https://github.com/namebrandon/Sparkov_Data_Generation)
+
+### Contribution
+* Based on references, constructed the complete workflow for developing and deploying the GCP based severless real-time credit card fraud detection solution using Google Colab
+* Trained, evaluated, and deployed different machine learning models:
+ * (Deployed) BigQuery: Boost Tree Models, Deep Neural Network Model
+ * (Not yet deploy) TensorFlow TFDF: Random Forest Model, Gradient Boosted Trees Model, Cart Model
+
+### Future Work
+* Deploy esisting TensorFlow TFDF models on GCP AI-Platform
+* Train, evaluate, standard TensorFlow models, and deploy them
+* Create clear and comprehensive data visualization based on the real-time stream processing of the deployed Dataflow pipeline
+
 
 ## Overview
 
