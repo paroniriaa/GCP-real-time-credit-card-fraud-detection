@@ -90,5 +90,5 @@ This project is referenced and developed based on the existing solution:
 
 ### Future Work
 * Deploy esisting TensorFlow TFDF models on GCP AI-Platform
-* Train, evaluate, standard TensorFlow models, and deploy them
+* Train, evaluate, and deploy TensorFlow standard models
 * Create clear and comprehensive data visualization on Data Studio based on the real-time stream processing of the deployed Dataflow pipeline
